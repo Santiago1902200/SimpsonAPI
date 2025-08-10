@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rick and Morty API</title>
+</head>
+<body>
+    <h1>Rick and Morty API</h1>
+    <main id="app">
+        <!-- CONTENIDO DINAMICO-->
+    </main>
+
+    <aside class="c-menu">
+        <button class="c-nav-item" onclick="general()"><img src="imgs/icons/home.png" alt=""></button>
+        <button class="c-nav-item" onclick="mostrarAleatorios()"><img src="imgs/icons/aleatorio.png" alt="aleatorio""></button>
+        <button class="c-nav-item" onclick="mostrarFavoritos()"><img src="imgs/icons/favorito.png" alt=""></button>
+
+    </aside>
+
+    <script src="js/aleatorios.js"></script>
+    <script src="js/detalle.js"></script>
+    <script src="js/favoritos.js"></script>
+    <script src="js/lista.js"></script> <!-- Este debe ir antes de api.js -->
+    <script src="js/api.js"></script> <!-- Este debe ir después -->
+    
+    
+    <script>
+        document.addEventListener("DOMContentLoaded",general);
+    </script>
+</body>
+</html> 

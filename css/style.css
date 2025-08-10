@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #1f1e1e;
+}
+
+h1{
+    text-align: center;
+    padding: 15px;
+}
+
+button{
+    background-color: transparent;
+    border: unset;
+    cursor: pointer;
+    margin: 0;
+    transition: 0.5s;
+}
+/* lista */
+.c-lista{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.c-lista-pokemon{
+    background-color: aliceblue;
+    width: calc(50% - 5px);
+    padding: 10px;
+    text-align: center;
+}
+
+/* navegacion */
+.c-nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: silver;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 15px;
+    gap: 10px;
+}
+
+aside{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+}
+
+.c-nav-item{
+    width: calc(25% - 7.5px);
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-weight: bold;
+
+}
+
+.c-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* ancho total */
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: space-between; /* espacio igual */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.c-nav-item {
+    flex: 1; /* cada botón ocupa el mismo ancho */
+    background: none;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; /* centra el icono horizontalmente */
+    align-items: center; /* centra el icono verticalmente */
+    background-color: black;
+}
+
+.c-nav-item img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease;
+}
+
+.c-lista {
+    display: flex;
+    flex-wrap: wrap; /* permite que los personajes salten de línea */
+    justify-content: center; /* centra horizontalmente */
+    gap: 20px; /* espacio entre personajes */
+    padding: 20px;
+}
+
+.c-lista-personaje {
+    text-align: center; /* centra el texto e imagen dentro del personaje */
+    background: #000000; /* opcional: fondo claro */
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 200px;
+}
+
+.c-lista-personaje img {
+    display: block;
+    margin: 0 auto; /* centra la imagen */
+    border-radius: 5px;
+}
+
+.c-buscador {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto; /* centra el buscador */
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+/* Efecto al hacer focus */
+.c-buscador:focus {
+    border-color: #00FF7F; /* verde tipo Rick and Morty */
+    box-shadow: 0 0 8px rgba(0, 255, 127, 0.6);
+}
+
+/**/
+
+
+/* Contenedor de detalle */
+.c-detalle {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 120px rgba(0, 255, 128, 0.712);
+    font-family: Arial, sans-serif;
+}
+
+.c-detalle img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.c-detalle h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.c-detalle p {
+    margin: 5px 0;
+}
+
+/* Botón de favorito */
+.c-detalle button {
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 2px solid #00FF7F;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+/* Hover del botón */
+.c-detalle button:hover {
+    background-color: #00FF7F;
+    color: #000;
+}
+
+/* Corazón */
+.corazon {
+    font-size: 18px;
+    margin-right: 5px;
+}
